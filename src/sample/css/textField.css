@@ -1,0 +1,10 @@
+.text-field {
+    -fx-background-color: #d0e4ff , #d0e4ff , #d0e4ff;
+    -fx-text-fill: white;
+    -fx-bacground-radius: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: #d0e4ff , #d0e4ff , #d0e4ff;
+    -fx-bacground-radius: 0;
+}
