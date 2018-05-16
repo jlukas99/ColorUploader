@@ -28,18 +28,18 @@
                 <Font name="Roboto Bold" size="10.0" />
             </font>
         </Label>
-        <Label layoutX="6.0" layoutY="35.0" prefHeight="30.0" prefWidth="257.0" style="-fx-alignment: center;" text="Color Uploader" textFill="WHITE" wrapText="true">
+        <Label layoutX="7.0" layoutY="-5.0" prefHeight="30.0" prefWidth="257.0" style="-fx-alignment: center;" text="Color Uploader" textFill="WHITE" wrapText="true">
             <font>
-                <Font name="Roboto Bold" size="22.0" />
+                <Font size="18.0" />
             </font>
         </Label>
-        <Label contentDisplay="CENTER" layoutX="102.0" layoutY="59.0" prefHeight="30.0" prefWidth="70.0" style="-fx-alignment: center;" text="By Jan Lukas v1.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <Label contentDisplay="CENTER" layoutX="92.0" layoutY="376.0" prefHeight="30.0" prefWidth="70.0" style="-fx-alignment: center;" text="By Jan Lukas v1.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
             <font>
                 <Font name="Roboto Bold" size="9.0" />
             </font>
         </Label>
-        <TextField fx:id="databaseIPField" layoutX="6.0" layoutY="89.0" prefHeight="32.0" prefWidth="200.0" promptText="Login..." stylesheets="@css/textField.css" />
-      <PasswordField fx:id="databasePasswdField" accessibleRole="PASSWORD_FIELD" layoutX="6.0" layoutY="125.0" prefHeight="32.0" prefWidth="200.0" promptText="Hasło..." stylesheets="@css/textField.css" />
+        <TextField fx:id="databaseIPField" layoutX="6.0" layoutY="95.0" prefHeight="32.0" prefWidth="200.0" promptText="Login..." stylesheets="@css/textField.css" />
+      <PasswordField fx:id="databasePasswdField" accessibleRole="PASSWORD_FIELD" layoutX="6.0" layoutY="130.0" prefHeight="32.0" prefWidth="200.0" promptText="Hasło..." stylesheets="@css/textField.css" />
       <ChoiceBox fx:id="kategoriaFoliBox" accessibleRole="CHECK_BOX" layoutX="6.0" layoutY="213.0" onMouseMoved="#loadBox" prefHeight="25.0" prefWidth="200.0" />
       <Label contentDisplay="CENTER" layoutX="210.0" layoutY="211.0" prefHeight="30.0" prefWidth="53.0" style="-fx-alignment: center;" text="Folia" textAlignment="CENTER" textFill="WHITE" wrapText="true">
          <font>
@@ -58,5 +58,7 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <TextField fx:id="databaseAdres" layoutX="6.0" layoutY="25.0" prefHeight="32.0" prefWidth="200.0" promptText="Adres..." stylesheets="@css/textField.css" />
+      <TextField fx:id="databaseDB" layoutX="6.0" layoutY="60.0" prefHeight="32.0" prefWidth="200.0" promptText="Baza Danych..." stylesheets="@css/textField.css" />
     </children>
 </Pane>

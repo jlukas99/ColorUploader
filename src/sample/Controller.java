@@ -22,7 +22,7 @@ public class Controller {
     @FXML
     ChoiceBox kategoriaFoliBox, odcienBox, jezykBox;
     @FXML
-    TextField databaseIPField;
+    TextField databaseIPField, databaseAdres, databaseDB;
     @FXML
     PasswordField databasePasswdField;
     @FXML
@@ -46,7 +46,6 @@ public class Controller {
 
     private int foliaInt;
     private int odcienInt;
-    private int jezykInt;
 
     private File path;
 
@@ -226,7 +225,7 @@ public class Controller {
 
     private boolean checkConnection(){
 
-        String polaczenieURL = "jdbc:mysql://localhost/proform_folie?user=" + databaseIPField.getText() + "&password=" + databasePasswdField.getText() + "&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        String polaczenieURL = "jdbc:mysql://" + databaseAdres.getText() + "/" + databaseDB.getText() + "?user=" + databaseIPField.getText() + "&password=" + databasePasswdField.getText() + "&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         Connection conn;
 
         try {
@@ -250,7 +249,7 @@ public class Controller {
     public void setDatabase(File f, int categoryId, String namePL, String nameEN, String nameCZ, String nameDE, String folia, int odcien, int languageType, String sort){
         try {
 
-            String url = "jdbc:mysql://localhost/proform_folie" + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+            String url = "jdbc:mysql://" + databaseAdres.getText() + "/" + databaseDB.getText() + "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
             Connection conn = DriverManager.getConnection(url,databaseIPField.getText(),databasePasswdField.getText());
 
